@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Figtree&family=Open+Sans:ital,wght@0,400;0,700;1,300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
 :root {
-    --primary-color: #677DB7;
-    --secundary-color: #9CA3DB;
+    --primary-color: #101652;
+    --secundary-color: #207178;
+    --tertiary-color: #dc6378;
 
     --oxford-blue-color: #000022;
     --fuivo-color: #E28413;
@@ -39,6 +39,9 @@ a {
     color: var(--white-color);
 }
 
+p, h2, h3, h4, h5, h5 {
+    color: var(--white-color);
+}
 li {
     list-style: none;
 }

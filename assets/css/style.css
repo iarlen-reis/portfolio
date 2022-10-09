@@ -3,17 +3,18 @@
 }
 
 .menu-content {
-    position: fixed;
     justify-content: center;
-    height: 5rem;
+    height: 8rem;
     padding: 0 1rem;
     width: 100%;
     background: var(--oxford-blue-color);
-    border-bottom: 0.1rem solid var(--secundary-color);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-bottom: 0.1rem  solid;
     z-index: 1;
 }
 
 .main-content {
+    width: 100%;
     max-width: 120rem;
     margin: 0 auto;
 }
@@ -41,7 +42,8 @@
     padding: 1.3rem;
 }
 
-.menu-content ul li a::after {
+
+/* .menu-content ul li a::after {
     content: '';
     position: absolute;
     bottom: 1rem;
@@ -50,11 +52,28 @@
     left: 50%;
     transition: all 300ms ease-in-out;
     background: var(--fuivo-color);
-}
+} */
 
 .menu-content ul li:hover a::after {
     width: 50%;
     left: 27%;
+}
+
+.nav-bar ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.github__link img {
+    width: 45px;
+    margin-top: 1.2rem;
+}
+
+.nav-bar .verctor__img {
+    height: 6rem;
+    margin-top: 2rem;
+    background: var(--white-color);
 }
 
 .space-menu {
@@ -65,9 +84,12 @@
 .section {
     height: 100vh;
     width: 100%;
-    background: teal;
 }
 
+.main-container {
+    background: #161626;
+    
+}
 
 .container {
     display: flex;
@@ -79,18 +101,14 @@
     height: 100%;
 }
 
-.container .info-1 {
-    width: 50%;
-    height: 100%;
-
+.menu-content h1 span {
+    font-family: 'Dancing Script', cursive;
+    cursor: pointer;
 }
 
-.container .info-2 {
-    position: absolute;
-    right: 0%;
-    width: 50%;
-    height: 100%;
-
+.main-content nav ul li a {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
 }
 
 .footer {
@@ -104,7 +122,6 @@
 
 
 @media (max-width: 767px) {
-
     .menu-content .main-content {
         flex-direction: column;
         justify-content: center;
@@ -128,61 +145,54 @@
     .space-menu {
         display: none;
     }
-
-    .container .info-1 {
-        width: 100%;
-    }
-    .container .info-2 {
-        width: 100%;
-        position: static;
-    }
     
-    .close-menu-label::after {
-        content: '≡';
-        position: fixed;
-        z-index: 2;
-        top: 1rem;
-        right: 2rem;
-        background: var(--primary-color);
-        color: var(--white-color);
-        font-size: 3rem;
-        line-height: 3rem;
-        width: 3rem;
-        height: 3rem;
-        padding: 0.5rem;
-        text-align: center;
-        cursor: pointer;
-    }
-    .close-menu:checked~.menu-content {
-        display: block;
-    }
+.close-menu-label::after {
+    content: '≡';
+    position: fixed;
+    z-index: 2;
+    top: 1rem;
+    right: 2rem;
+    background: var(--primary-color);
+    color: var(--white-color);
+    font-size: 3rem;
+    line-height: 3rem;
+    width: 3rem;
+    height: 3rem;
+    padding: 0.5rem;
+    text-align: center;
+    cursor: pointer;
+}
 
-    .close-menu:checked~.close-menu-label::after {
-        content: '×';
-        
-    }
+
+.close-menu:checked~.menu-content {
+    display: block;
+}
+
+.close-menu:checked~.close-menu-label::after {
+    content: '×';
     
-    .menu-spacing {
-        display: none;
-    }
+}
 
-    .back-to-top {
-        position: fixed;
-        bottom: 2rem;
-        right: 2rem;
-        background-color: var(--white-color);
-        width: 5rem;
-        height: 5rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 4rem;
-        transform: rotate(-90deg);
-        border: 0.1rem solid var(--secundary-color);
-        color: var(--primary-color);
-    }
+.menu-spacing {
+    display: none;
+}
 
-    .close-menu {
-        display: none;
-    }
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: var(--white-color);
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4rem;
+    border: 0.1rem solid var(--secundary-color);
+    color: var(--primary-color);
+}
+
+.close-menu {
+    display: none;
+}
 }
