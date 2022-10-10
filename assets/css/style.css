@@ -98,6 +98,8 @@
     display: none;
 }
 
+
+
 .menu-content h1 span {
     font-family: 'Dancing Script', cursive;
     cursor: pointer;
@@ -193,6 +195,7 @@
     .logo__mobile span {
         font-family: 'Dancing Script', cursive;
         font-size: 2.2rem;
+        cursor: pointer;
 
     }
 
