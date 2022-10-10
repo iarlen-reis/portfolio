@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
-
 :root {
     --primary-color: #101652;
     --secundary-color: #207178;
@@ -21,7 +20,6 @@
 
 body {
     font-size: 2rem;
-    font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
