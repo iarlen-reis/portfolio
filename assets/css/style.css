@@ -183,11 +183,11 @@
         width: 100%;
         margin-bottom: 2rem;
         background: var(--oxford-blue-color);
-        cursor: nonegit i;
     }
 
     .logo__mobile h1 {
         padding-left: 2rem;
+        cursor: pointer;
     }
 
     .logo__mobile span {
